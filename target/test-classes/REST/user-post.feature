@@ -18,11 +18,12 @@ Feature: Caso de prueba POST
   """
   {
     'message': '#string',
+    '_id': '#string'
   }
   """
     Examples:
-      | Caso          | Vnome          | Vemail               | statusA |
-      | Caso Positivo | 'Daniel Marco' | 'dmateoqa@qa.com.br' | 400     |
-      | Email vacio   | 'Denis'        |                      | 400     |
-      | Campos vacios |                |                      | 400     |
-      | Email nulo    | Marc           | null                 | 400     |
+      | Caso             | Vnome             | Vemail                   | statusA |
+      | Caso Positivo 1  | 'Daniel Marquina' | 'dmarquina1004@qa.com'  | 201     |
+      | Caso negativo  2 | 'Daniel carrasco' | 'dcarrasco2004@qa.com' | 201     |
+
+

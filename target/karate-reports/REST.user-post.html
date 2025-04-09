@@ -38,8 +38,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">1</div>
-      <div id="nav-fail" class="bg-danger">3</div>
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
     </div>
   </div>
   <div id="nav-env">
@@ -49,22 +49,16 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2025-04-06 03:27:47 p. m.</div>
+    <div>2025-04-08 06:21:17 p. m.</div>
   </div>
 </div>
 
         <div class="nav-container">
           <div class="nav-item passed">
-            <a href="#[1.1:26]"><span>[1.1:26]</span> <span>Caso de prueba tipo POST Caso Positivo</span></a>
+            <a href="#[1.1:26]"><span>[1.1:26]</span> <span>Caso de prueba tipo POST Caso Positivo 1</span></a>
           </div>
-          <div class="nav-item failed">
-            <a href="#[1.2:27]"><span>[1.2:27]</span> <span>Caso de prueba tipo POST Email vacio</span></a>
-          </div>
-          <div class="nav-item failed">
-            <a href="#[1.3:28]"><span>[1.3:28]</span> <span>Caso de prueba tipo POST Campos vacios</span></a>
-          </div>
-          <div class="nav-item failed">
-            <a href="#[1.4:29]"><span>[1.4:29]</span> <span>Caso de prueba tipo POST Email nulo</span></a>
+          <div class="nav-item passed">
+            <a href="#[1.2:27]"><span>[1.2:27]</span> <span>Caso de prueba tipo POST Caso negativo  2</span></a>
           </div>
         </div>
       </div>
@@ -85,12 +79,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
               <div class="scenario-keyword">
                 Scenario: <span>[1.1:26]</span>
-                <span class="scenario-name">Caso de prueba tipo POST Caso Positivo</span>
+                <span class="scenario-name">Caso de prueba tipo POST Caso Positivo 1</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1272</span>
+              <span>ms:</span>&nbsp;<span>1462</span>
             </div>
           </div>
           
@@ -107,7 +101,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>url &#39;https://serverest.dev/&#39; + &#39;/usuarios&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">51</div>
+    <div class="time-cell passed">110</div>
   </div>
 
    
@@ -135,17 +129,17 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>request</span>
       </div>
     </div>
-    <div class="time-cell passed">29</div>
+    <div class="time-cell passed">48</div>
   </div>
 
    
   
   <div class="preformatted" data-parent="1.6">{
-&quot;nome&quot;: &#39;Daniel Marco&#39;,
-     &quot;email&quot;: &#39;dmateoqa@qa.com.br&#39;,
-     &quot;password&quot;: &quot;teste&quot;,
-     &quot;administrador&quot;: &quot;true&quot;
-     }</div>
+&quot;nome&quot;: &#39;Daniel Marquina&#39;,
+&quot;email&quot;: &#39;dmarquina1003sd@qa.com&#39;,
+&quot;password&quot;: &quot;teste&quot;,
+&quot;administrador&quot;: &quot;true&quot;
+}</div>
 
   
 
@@ -168,7 +162,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">1115</div>
+    <div class="time-cell passed">1269</div>
   </div>
 
    
@@ -177,18 +171,18 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.15">15:27:44.738 request:
+  <div class="preformatted" data-parent="1.15">18:21:16.267 request:
 1 &gt; POST https://serverest.dev//usuarios
 1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 94
+1 &gt; Content-Length: 101
 1 &gt; Host: serverest.dev
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.2)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;nome&quot;:&quot;Daniel Marco&quot;,&quot;email&quot;:&quot;dmateoqa@qa.com.br&quot;,&quot;password&quot;:&quot;teste&quot;,&quot;administrador&quot;:&quot;true&quot;}
+{&quot;nome&quot;:&quot;Daniel Marquina&quot;,&quot;email&quot;:&quot;dmarquina1003sd@qa.com&quot;,&quot;password&quot;:&quot;teste&quot;,&quot;administrador&quot;:&quot;true&quot;}
 
-15:27:45.624 response time in milliseconds: 883
-1 &lt; 400
+18:21:17.175 response time in milliseconds: 906
+1 &lt; 201
 1 &lt; access-control-allow-origin: *
 1 &lt; x-dns-prefetch-control: off
 1 &lt; x-frame-options: SAMEORIGIN
@@ -197,12 +191,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; x-content-type-options: nosniff
 1 &lt; x-xss-protection: 1; mode=block
 1 &lt; content-type: application/json; charset=utf-8
-1 &lt; x-cloud-trace-context: 642ceb684b2d457fc6bfbdc6194bed9e;o=1
-1 &lt; date: Sun, 06 Apr 2025 20:27:45 GMT
+1 &lt; x-cloud-trace-context: 6918090696bde98f8d3789d2b8c9890a;o=1
+1 &lt; date: Tue, 08 Apr 2025 23:21:17 GMT
 1 &lt; server: Google Frontend
-1 &lt; Content-Length: 53
+1 &lt; Content-Length: 82
 {
-    &quot;message&quot;: &quot;Este email já está sendo usado&quot;
+    &quot;message&quot;: &quot;Cadastro realizado com sucesso&quot;,
+    &quot;_id&quot;: &quot;AzvaLoVsokaAlfem&quot;
 }
 
 </div>   
@@ -221,7 +216,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">16</div>
       
       <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 400</span>
+        <span>Then</span>&nbsp;<span>status 201</span>
       </div>
     </div>
     <div class="time-cell passed">3</div>
@@ -249,48 +244,17 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">17</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>print response</span>
-      </div>
-    </div>
-    <div class="time-cell passed">56</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="1.17">15:27:45.684 [print] {
-  &quot;message&quot;: &quot;Este email já está sendo usado&quot;
-}
- 
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="1.18">
-      <div class="step-ref passed">18</div>
-      
-      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response ==</span>
       </div>
     </div>
-    <div class="time-cell passed">19</div>
+    <div class="time-cell passed">32</div>
   </div>
 
    
   
-  <div class="preformatted" data-parent="1.18">{
+  <div class="preformatted" data-parent="1.17">{
   &#39;message&#39;: &#39;#string&#39;,
+  &#39;_id&#39;: &#39;#string&#39;
 }</div>
 
   
@@ -310,12 +274,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
               <div class="scenario-keyword">
                 Scenario: <span>[1.2:27]</span>
-                <span class="scenario-name">Caso de prueba tipo POST Email vacio</span>
+                <span class="scenario-name">Caso de prueba tipo POST Caso negativo  2</span>
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>630</span>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>639</span>
             </div>
           </div>
           
@@ -366,11 +330,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
    
   
   <div class="preformatted" data-parent="2.6">{
-&quot;nome&quot;: &#39;Denis&#39;,
-     &quot;email&quot;: ,
-     &quot;password&quot;: &quot;teste&quot;,
-     &quot;administrador&quot;: &quot;true&quot;
-     }</div>
+&quot;nome&quot;: &#39;Daniel carrasco&#39;,
+&quot;email&quot;: &#39;dcarrasco2003@qa.com&#39;,
+&quot;password&quot;: &quot;teste&quot;,
+&quot;administrador&quot;: &quot;true&quot;
+}</div>
 
   
 
@@ -393,7 +357,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">627</div>
+    <div class="time-cell passed">637</div>
   </div>
 
    
@@ -402,18 +366,18 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="2.15">15:27:45.718 request:
+  <div class="preformatted" data-parent="2.15">18:21:17.230 request:
 1 &gt; POST https://serverest.dev//usuarios
 1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 69
+1 &gt; Content-Length: 99
 1 &gt; Host: serverest.dev
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.2)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;nome&quot;:&quot;Denis&quot;,&quot;email&quot;:&quot;&quot;,&quot;password&quot;:&quot;teste&quot;,&quot;administrador&quot;:&quot;true&quot;}
+{&quot;nome&quot;:&quot;Daniel carrasco&quot;,&quot;email&quot;:&quot;dcarrasco2003@qa.com&quot;,&quot;password&quot;:&quot;teste&quot;,&quot;administrador&quot;:&quot;true&quot;}
 
-15:27:46.342 response time in milliseconds: 624
-1 &lt; 400
+18:21:17.865 response time in milliseconds: 633
+1 &lt; 201
 1 &lt; access-control-allow-origin: *
 1 &lt; x-dns-prefetch-control: off
 1 &lt; x-frame-options: SAMEORIGIN
@@ -422,12 +386,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; x-content-type-options: nosniff
 1 &lt; x-xss-protection: 1; mode=block
 1 &lt; content-type: application/json; charset=utf-8
-1 &lt; x-cloud-trace-context: 658a1e34d5b37df369addd4b52b13071
-1 &lt; date: Sun, 06 Apr 2025 20:27:46 GMT
+1 &lt; x-cloud-trace-context: 656e94b30cb75e7fdd2f77d14da51969
+1 &lt; date: Tue, 08 Apr 2025 23:21:18 GMT
 1 &lt; server: Google Frontend
-1 &lt; Content-Length: 50
+1 &lt; Content-Length: 82
 {
-    &quot;email&quot;: &quot;email não pode ficar em branco&quot;
+    &quot;message&quot;: &quot;Cadastro realizado com sucesso&quot;,
+    &quot;_id&quot;: &quot;je7gpxQ22LJh6tsE&quot;
 }
 
 </div>   
@@ -446,7 +411,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">16</div>
       
       <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 400</span>
+        <span>Then</span>&nbsp;<span>status 201</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -474,7 +439,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">17</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>print response</span>
+        <span>And</span>&nbsp;<span>match response ==</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -482,539 +447,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
    
   
-  
-
-  
-
-  <div class="preformatted" data-parent="2.17">15:27:46.345 [print] {
-  &quot;email&quot;: &quot;email não pode ficar em branco&quot;
-}
- 
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="2.18">
-      <div class="step-ref failed">18</div>
-      
-      <div class="step-cell failed">
-        <span>And</span>&nbsp;<span>match response ==</span>
-      </div>
-    </div>
-    <div class="time-cell failed">2</div>
-  </div>
-
-   
-  
-  <div class="preformatted" data-parent="2.18">{
+  <div class="preformatted" data-parent="2.17">{
   &#39;message&#39;: &#39;#string&#39;,
+  &#39;_id&#39;: &#39;#string&#39;
 }</div>
 
   
 
-  <div class="preformatted" data-parent="2.18">15:27:46.348 classpath:REST/user-post.feature:18
-And match response ==
-&quot;&quot;&quot;
-{
-  &#39;message&#39;: &#39;#string&#39;,
-}
-&quot;&quot;&quot;
-match failed: EQUALS
-  $ | not equal | actual does not contain key - &#39;message&#39; (MAP:MAP)
-  {&quot;email&quot;:&quot;email não pode ficar em branco&quot;}
-  {&quot;message&quot;:&quot;#string&quot;}
-
-
-classpath:REST/user-post.feature:18
-</div>   
-
-  
-
-</div>
-</div>
-        </div>
-        <div class="scenario">
-          <div class="scenario-heading" id="[1.3:28]">
-            <div class="heading-container">
-              <div class="scenario-tags">
-                
-              </div>
-              <div class="scenario-keyword">
-                Scenario: <span>[1.3:28]</span>
-                <span class="scenario-name">Caso de prueba tipo POST Campos vacios</span>
-                <span></span>
-              </div>
-            </div>
-            <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>633</span>
-            </div>
-          </div>
-          
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="3.5">
-      <div class="step-ref passed">5</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>url &#39;https://serverest.dev/&#39; + &#39;/usuarios&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
      
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="3.6">
-      <div class="step-ref passed">6</div>
-      
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>request</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  <div class="preformatted" data-parent="3.6">{
-&quot;nome&quot;: ,
-     &quot;email&quot;: ,
-     &quot;password&quot;: &quot;teste&quot;,
-     &quot;administrador&quot;: &quot;true&quot;
-     }</div>
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="3.15">
-      <div class="step-ref passed">15</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>method POST</span>
-      </div>
-    </div>
-    <div class="time-cell passed">625</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="3.15">15:27:46.375 request:
-1 &gt; POST https://serverest.dev//usuarios
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 64
-1 &gt; Host: serverest.dev
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.2)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;nome&quot;:&quot;&quot;,&quot;email&quot;:&quot;&quot;,&quot;password&quot;:&quot;teste&quot;,&quot;administrador&quot;:&quot;true&quot;}
-
-15:27:46.994 response time in milliseconds: 616
-1 &lt; 400
-1 &lt; access-control-allow-origin: *
-1 &lt; x-dns-prefetch-control: off
-1 &lt; x-frame-options: SAMEORIGIN
-1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
-1 &lt; x-download-options: noopen
-1 &lt; x-content-type-options: nosniff
-1 &lt; x-xss-protection: 1; mode=block
-1 &lt; content-type: application/json; charset=utf-8
-1 &lt; x-cloud-trace-context: 0c84b6d78627087f5ec05fa4427892de
-1 &lt; date: Sun, 06 Apr 2025 20:27:46 GMT
-1 &lt; server: Google Frontend
-1 &lt; Content-Length: 96
-{
-    &quot;nome&quot;: &quot;nome não pode ficar em branco&quot;,
-    &quot;email&quot;: &quot;email não pode ficar em branco&quot;
-}
-
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="3.16">
-      <div class="step-ref passed">16</div>
-      
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 400</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="3.17">
-      <div class="step-ref passed">17</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>print response</span>
-      </div>
-    </div>
-    <div class="time-cell passed">3</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="3.17">15:27:47.002 [print] {
-  &quot;nome&quot;: &quot;nome não pode ficar em branco&quot;,
-  &quot;email&quot;: &quot;email não pode ficar em branco&quot;
-}
- 
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="3.18">
-      <div class="step-ref failed">18</div>
-      
-      <div class="step-cell failed">
-        <span>And</span>&nbsp;<span>match response ==</span>
-      </div>
-    </div>
-    <div class="time-cell failed">4</div>
-  </div>
-
-   
-  
-  <div class="preformatted" data-parent="3.18">{
-  &#39;message&#39;: &#39;#string&#39;,
-}</div>
-
-  
-
-  <div class="preformatted" data-parent="3.18">15:27:47.007 classpath:REST/user-post.feature:18
-And match response ==
-&quot;&quot;&quot;
-{
-  &#39;message&#39;: &#39;#string&#39;,
-}
-&quot;&quot;&quot;
-match failed: EQUALS
-  $ | not equal | actual has 1 more key(s) than expected - {&quot;nome&quot;:&quot;nome não pode ficar em branco&quot;,&quot;email&quot;:&quot;email não pode ficar em branco&quot;} (MAP:MAP)
-  {&quot;nome&quot;:&quot;nome não pode ficar em branco&quot;,&quot;email&quot;:&quot;email não pode ficar em branco&quot;}
-  {&quot;message&quot;:&quot;#string&quot;}
-
-
-classpath:REST/user-post.feature:18
-</div>   
-
-  
-
-</div>
-</div>
-        </div>
-        <div class="scenario">
-          <div class="scenario-heading" id="[1.4:29]">
-            <div class="heading-container">
-              <div class="scenario-tags">
-                
-              </div>
-              <div class="scenario-keyword">
-                Scenario: <span>[1.4:29]</span>
-                <span class="scenario-name">Caso de prueba tipo POST Email nulo</span>
-                <span></span>
-              </div>
-            </div>
-            <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>665</span>
-            </div>
-          </div>
-          
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="4.5">
-      <div class="step-ref passed">5</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>url &#39;https://serverest.dev/&#39; + &#39;/usuarios&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="4.6">
-      <div class="step-ref passed">6</div>
-      
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>request</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  <div class="preformatted" data-parent="4.6">{
-&quot;nome&quot;: Marc,
-     &quot;email&quot;: null,
-     &quot;password&quot;: &quot;teste&quot;,
-     &quot;administrador&quot;: &quot;true&quot;
-     }</div>
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="4.15">
-      <div class="step-ref passed">15</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>method POST</span>
-      </div>
-    </div>
-    <div class="time-cell passed">660</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="4.15">15:27:47.028 request:
-1 &gt; POST https://serverest.dev//usuarios
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 70
-1 &gt; Host: serverest.dev
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.2)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;nome&quot;:&quot;Marc&quot;,&quot;email&quot;:null,&quot;password&quot;:&quot;teste&quot;,&quot;administrador&quot;:&quot;true&quot;}
-
-15:27:47.682 response time in milliseconds: 652
-1 &lt; 400
-1 &lt; access-control-allow-origin: *
-1 &lt; x-dns-prefetch-control: off
-1 &lt; x-frame-options: SAMEORIGIN
-1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
-1 &lt; x-download-options: noopen
-1 &lt; x-content-type-options: nosniff
-1 &lt; x-xss-protection: 1; mode=block
-1 &lt; content-type: application/json; charset=utf-8
-1 &lt; x-cloud-trace-context: d9cbf04bd1420088ad21f297db7435a2
-1 &lt; date: Sun, 06 Apr 2025 20:27:47 GMT
-1 &lt; server: Google Frontend
-1 &lt; Content-Length: 44
-{
-    &quot;email&quot;: &quot;email deve ser uma string&quot;
-}
-
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="4.16">
-      <div class="step-ref passed">16</div>
-      
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 400</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="4.17">
-      <div class="step-ref passed">17</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>print response</span>
-      </div>
-    </div>
-    <div class="time-cell passed">2</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="4.17">15:27:47.689 [print] {
-  &quot;email&quot;: &quot;email deve ser uma string&quot;
-}
- 
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="4.18">
-      <div class="step-ref failed">18</div>
-      
-      <div class="step-cell failed">
-        <span>And</span>&nbsp;<span>match response ==</span>
-      </div>
-    </div>
-    <div class="time-cell failed">2</div>
-  </div>
-
-   
-  
-  <div class="preformatted" data-parent="4.18">{
-  &#39;message&#39;: &#39;#string&#39;,
-}</div>
-
-  
-
-  <div class="preformatted" data-parent="4.18">15:27:47.693 classpath:REST/user-post.feature:18
-And match response ==
-&quot;&quot;&quot;
-{
-  &#39;message&#39;: &#39;#string&#39;,
-}
-&quot;&quot;&quot;
-match failed: EQUALS
-  $ | not equal | actual does not contain key - &#39;message&#39; (MAP:MAP)
-  {&quot;email&quot;:&quot;email deve ser uma string&quot;}
-  {&quot;message&quot;:&quot;#string&quot;}
-
-
-classpath:REST/user-post.feature:18
-</div>   
 
   
 

@@ -16,13 +16,13 @@ Feature: Caso de prueba GetID
   """
 
   Scenario: Caso de prueba tipo GET ID negativo
-    Given url 'https://serverest.dev/' + '/usuarios/123456789abc'
+    Given url 'https://serverest.dev/' + '/usuarios/1238945567'
     When method GET
     Then status 400
     And print response
     And match response ==
   """
       {
-      'message': '#string'
+      'id': '#string',
       }
   """

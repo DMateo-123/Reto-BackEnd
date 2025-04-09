@@ -1,7 +1,7 @@
 Feature: Caso de prueba DELETE
 
   Scenario: caso de prueba tipo DELETE positivo
-    Given url 'https://serverest.dev/' + '/usuarios/xB5j8tViDATxFZqD'
+    Given url 'https://serverest.dev/' + '/usuarios/AzvaLoVsokaAlfem'
     When method DELETE
     Then status 200
     And print response
